@@ -1,0 +1,22 @@
+.admin-login-bg {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+}
+
+.admin-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #1a1a2e;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.admin-btn {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460) !important;
+}
+
+.admin-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0f3460, #1a1a2e) !important;
+}
