@@ -1,0 +1,164 @@
+.admin-payments-page {
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.admin-payments-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.admin-payments-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 28px;
+}
+
+.payments-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.payment-stat {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.payment-stat:hover {
+  transform: translateY(-3px);
+}
+
+.payment-stat-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.payment-stat-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Filter */
+.payments-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.payment-filter-btn {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.payment-filter-btn.active {
+  background: #1a1a2e;
+  border-color: #1a1a2e;
+  color: #fff;
+}
+
+/* Table */
+.payments-table-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.payments-table th {
+  background: #f8f9fa;
+  padding: 13px 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #555;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.payments-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  color: #444;
+}
+
+.payments-table tr:hover td {
+  background: #fafafa;
+}
+
+.payments-table tr:last-child td {
+  border-bottom: none;
+}
+
+.payment-id-cell {
+  font-weight: 700;
+  color: #1a1a2e;
+  font-family: monospace;
+}
+
+.payment-amount-cell {
+  font-weight: 700;
+  color: #28a745;
+}
+
+.payment-date-cell {
+  color: #888;
+  font-size: 0.82rem;
+}
+
+/* Status Badges */
+.payment-status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.payment-status-badge.status-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.payment-status-badge.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.payment-status-badge.status-failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Empty */
+.payments-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
